@@ -1,0 +1,199 @@
+/* Reset margin, padding, border
+ * *********************************** */
+
+ html, body,
+ h1, h2, h3, h4, h5, h6,
+ a, p, span,
+ em, small, strong,
+ sub, sup,
+ mark, del, ins, strike,
+ abbr, dfn,
+ blockquote, q, cite,
+ code, pre,
+ ol, ul, li, dl, dt, dd,
+ div, section, article,
+ main, aside, nav,
+ header, hgroup, footer,
+ img, figure, figcaption,
+ address, time,
+ audio, video,
+ canvas, iframe,
+ details, summary,
+ fieldset, form, label, legend,
+ table, caption,
+ tbody, tfoot, thead,
+ tr, th, td {
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+ 
+ /* Typography
+  * *********************************** */
+ 
+ html {
+     font-size: 62.5%;
+     font-family: 'Open Sans', sans-serif;
+ }
+ 
+ body {
+     font-size: 1.6rem;
+     line-height: 1.4;
+ }
+ 
+ * {
+     font-family: inherit;
+     font-size: inherit;
+     line-height: inherit;
+ }
+ 
+ a,
+ a:visited {
+     color: inherit;
+ }
+ 
+ /* Layout
+  * *********************************** */
+ 
+ article,
+ aside,
+ footer,
+ header,
+ nav,
+ section,
+ main {
+     display: block;
+ }
+ 
+ * {
+     box-sizing: border-box;
+ }
+ 
+ *:before,
+ *:after {
+     box-sizing: inherit;
+ }
+ 
+ /* Elements
+  * *********************************** */
+ 
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ 
+ ol,
+ ul {
+     list-style: none;
+ }
+ 
+ img,
+ video {
+     max-width: 100%;
+ }
+ 
+ img {
+     border-style: none;
+ }
+ 
+ blockquote,
+ q {
+     quotes: none;
+ }
+ 
+ blockquote:after,
+ blockquote:before,
+ q:after,
+ q:before {
+     content: "";
+     content: none;
+ }
+ 
+ /* Attributes & states
+  * *********************************** */
+ 
+ [hidden] {
+     display: none !important;
+ }
+ 
+ [disabled] {
+     cursor: not-allowed;
+ }
+ 
+ :focus:not(:focus-visible) {
+     outline: none;
+ }
+ 
+ /* Utility classes
+  * *********************************** */
+ 
+ .sr-only {
+     position: absolute;
+     clip: rect(1px, 1px, 1px, 1px);
+     left: -9999px;
+     top: -9999px;
+ }
+
+ /* END OF CSS RESET */
+
+.main {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 2.5fr auto 2.5fr 1fr;
+    }
+
+.intro-left, .projects-left {
+    display: grid;
+    grid-column: 2 / span 1;
+    justify-items: end;
+    text-align: right;
+}
+    
+.intro-right, .projects-right {
+    display: grid;
+    grid-column: span 1 / -2;
+}
+
+.intro-left, .projects-left, .intro-right, .projects-right {
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100vh;
+}
+
+.main-footer {
+    grid-column: 2 / -2;
+    align-self: center;
+    justify-self: center;
+}
+
+h1 {
+    font-size: 6.4rem;
+    font-weight: normal;
+    color: #696969;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    background-color: gold;
+}
+
+#avatar {
+    width: 100px;
+    filter: gray;
+    filter: grayscale(100%);
+    border-radius: 50px 0px 50px 0px;
+}
+
+.intro-middle {
+    color: gold;
+    font-size: 16.0rem;
+    align-self: center;
+    padding-bottom: 5.5rem;
+}
+
+.intro-right {
+    font-size: 2.4rem;
+    color: #696969;
+    padding-bottom: 2.0rem;
+}
