@@ -34,6 +34,8 @@
  html {
      font-size: 62.5%;
      font-family: 'Open Sans', sans-serif;
+     color: #696969;
+     scroll-behavior: smooth;
  }
  
  body {
@@ -140,11 +142,30 @@
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr 2.5fr auto 2.5fr 1fr;
+    grid-template-rows: 90vh 10vh 90vh 10vh;
     }
 
+a:link {
+    color: #696969;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #696969;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #696969;
+}
+
+a:active {
+    color: #696969;
+}
+
 .intro-left, .projects-left {
-    display: grid;
     grid-column: 2 / span 1;
+    display: grid;
     justify-items: end;
     text-align: right;
 }
@@ -156,9 +177,8 @@
 
 .intro-left, .projects-left, .intro-right, .projects-right {
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 100vh;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
 }
 
 .main-footer {
@@ -170,8 +190,7 @@
 h1 {
     font-size: 6.4rem;
     font-weight: normal;
-    color: #696969;
-    margin-bottom: 10px;
+    margin-bottom: 1.0rem;
 }
 
 .highlight {
@@ -187,24 +206,35 @@ h1 {
 
 .intro-right {
     font-size: 2.4rem;
-    color: #696969;
     padding-bottom: 2.5rem;
 }
 .icons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 2.5rem;
 }
 .icon {
-    width: 150px;
-    border-radius: 0px 50px 0px 50px;
+    width: 15.0rem;
+    border-radius: 0px 5.0rem 0px 5.0rem;
     opacity: 0.9;
     filter: alpha(opacity=90); /* For IE8 and earlier */
 }
 
 #avatar {
-    width: 150px;
+    width: 15.0rem;
     filter: gray;
     filter: grayscale(100%);
-    border-radius: 50px 0px 50px 0px;
+    border-radius: 5.0rem 0px 5.0rem 0px;
+}
+
+.button-text {
+    grid-column: 2 / -2;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    background-color: gold;
+    padding: 1.0rem;
+    margin: 0;
 }
