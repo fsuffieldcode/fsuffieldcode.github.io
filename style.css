@@ -237,13 +237,22 @@ nav {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
     font-family: 'Esteban', serif;
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     text-align: left;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
 }
 
-.highlight {
+.bio-bottom {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    font-family: 'Esteban', serif;
+    font-size: 3.3rem;
+    font-weight: normal;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     color: #34eb92;
 }
