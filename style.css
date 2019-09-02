@@ -33,9 +33,6 @@
  
  html {
      font-size: 62.5%;
-     font-family: 'Open Sans', sans-serif;
-     color: #696969;
-     scroll-behavior: smooth;
  }
  
  body {
@@ -135,106 +132,118 @@
      left: -9999px;
      top: -9999px;
  }
+ 
+
 
  /* END OF CSS RESET */
 
-.main {
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: 1fr 2.5fr auto 2.5fr 1fr;
-    grid-template-rows: 90vh 10vh 90vh 10vh;
-    }
 
-a:link {
-    color: #696969;
-    text-decoration: none;
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
 }
 
-a:visited {
-    color: #696969;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #696969;
-}
-
-a:active {
-    color: #696969;
-}
-
-.intro-left, .projects-left {
-    grid-column: 2 / span 1;
-    display: grid;
-    justify-items: end;
-    text-align: right;
-}
-    
-.intro-right, .projects-right {
-    display: grid;
-    grid-column: span 1 / -2;
-}
-
-.intro-left, .projects-left, .intro-right, .projects-right {
+nav {
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    color: black;
+    padding-left: 30px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-left: 1.0rem;
-    margin-right: 1.0rem;
-}
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(161,161,161,0.78);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(161,161,161,0.78);
+    box-shadow: 0px 3px 3px 0px rgba(161,161,161,0.78);
+  }
 
-.main-footer {
-    grid-column: 2 / -2;
-    align-self: center;
-    justify-self: center;
-}
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
 
-h1 {
+  .navbar a {
+    text-decoration: none;
+  }
+
+  .nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+
+  .nav-item:hover {
+    color: #34eb92;
+  }
+
+  .home {
+    font-family: 'Esteban', serif;
+  }
+
+  .logo {
+      font-size: 1.8rem;
+      font-weight: normal;
+  }
+  .logo:hover {
+    color: #34eb92;
+  }
+
+  .home {
+      display: grid;
+      grid-template-columns: 1.25fr 3fr 1.5fr 3fr 1.25fr;
+      grid-template-rows: 2fr 3fr 3fr 2fr;
+      height: 100vh;
+      width: 100vw;
+  }
+
+  .name-top {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      font-family: 'Esteban', serif;
+      font-size: 5.4rem;
+      text-align: right;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+  }
+
+  .name-bottom {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-family: 'Esteban', serif;
     font-size: 6.4rem;
-    font-weight: normal;
-    margin-bottom: 1.0rem;
+    color: #34eb92;
+    text-align: right;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  .middle {
+      grid-column: 3 / 4;
+      grid-row: 2 / 4;
+      font-family: 'Esteban', serif;
+      font-size: 14.0rem;
+      color: #34eb92;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2.0rem;
+  }
+
+  .bio-top {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    font-family: 'Esteban', serif;
+    font-size: 3.6rem;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
 .highlight {
-    background-color: gold;
-}
-
-.intro-middle {
-    color: gold;
-    font-size: 16.0rem;
-    align-self: center;
-    padding-bottom: 5.5rem;
-}
-
-.intro-right {
-    font-size: 2.4rem;
-    padding-bottom: 2.5rem;
-}
-.icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2.5rem;
-}
-.icon {
-    width: 15.0rem;
-    border-radius: 0px 5.0rem 0px 5.0rem;
-    opacity: 0.9;
-    filter: alpha(opacity=90); /* For IE8 and earlier */
-}
-
-#avatar {
-    width: 15.0rem;
-    filter: gray;
-    filter: grayscale(100%);
-    border-radius: 5.0rem 0px 5.0rem 0px;
-}
-
-.button-text {
-    grid-column: 2 / -2;
-    font-size: 2.4rem;
-    line-height: 2.4rem;
-    align-self: center;
-    justify-self: center;
-    text-align: center;
-    background-color: gold;
-    padding: 1.0rem;
-    margin: 0;
+    color: #34eb92;
 }
